@@ -1,0 +1,36 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$dark: #242946;
+
+$box-shadow-sm: 0 0.25rem 0.25rem rgba($primary, 0.2);
+
+
+$modal-header-border-width:         0;
+$modal-content-bg:                 rgba($dark, .8);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    overflow: hidden;
+}
+
+.navbar, .modal, .login {
+    letter-spacing: 2px;
+}
+
+.narrow-buttom {
+width: 100px;
+}
+
+.wide-buttom {
+width: 200px;
+}
+
+.blue-pill {
+    height: 80%;
+    width: 150%;
+    z-index: -1;
+    margin: 15% 0 0 20%;
+    background-color: $primary;
+}
