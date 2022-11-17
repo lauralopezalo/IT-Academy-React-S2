@@ -10,21 +10,44 @@ $modal-content-bg: rgba($dark, 0.8);
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
+    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
 
-p {
+h1 {
+    font-weight: 600;
+}
+
+h2 {
     font-weight: 500;
 }
 
-section {
-    margin: 125px 0;
+h3 {
+    font: {
+        weight: 500;
+        size: 20px;
+    }
 }
 
-.navbar,
-.modal,
-.login {
-    letter-spacing: 2px;
+p {
+    font-weight: 400;
+    color: gray;
+}
+
+section {
+    margin: 8rem 0;
+}
+
+.navbar {
+    a,
+    button {
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+}
+
+.modal a {
+    font-weight: 400;
 }
 
 .narrow-buttom {
@@ -33,6 +56,8 @@ section {
 
 .wide-buttom {
     width: 200px;
+    font-weight: 400;
+    color: gray;
 }
 
 .blue-pill {
@@ -49,7 +74,7 @@ section {
     a {
         line-height: 42px;
         color: gray;
-        font-weight: 600;
+        font-weight: 500;
         padding: 13px 0px;
         position: relative;
 
@@ -71,11 +96,11 @@ section {
         width: 220px;
         text-align: center;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1200px) {
             width: 100%;
         }
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1200px) {
             border-top: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
         }
     }
@@ -89,5 +114,46 @@ section {
 .tab-content {
     .active {
         display: inline-flex;
+    }
+}
+
+
+// Browser Cards Section -----------------------------------------
+
+.browser-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 15px rgba($primary, 0.2);
+    margin: 2rem auto;
+    max-width: 279px;
+    height: 26rem;
+
+    h3 {
+        letter-spacing: 1px;
+        padding-bottom: 0.5rem;
+    }
+
+    img {
+        margin: 1.5rem 0;
+    }
+
+    a {
+        margin-bottom: 1.5rem;
+    }
+   }
+
+   .firefox {
+    @media screen and (min-width: 992px) {
+        margin-top: 5rem;
+    }
+}
+
+.opera {
+    @media screen and (min-width: 992px) {
+        margin-top: 10rem;
     }
 }
