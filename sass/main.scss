@@ -4,33 +4,90 @@ $dark: #242946;
 
 $box-shadow-sm: 0 0.25rem 0.25rem rgba($primary, 0.2);
 
-
-$modal-header-border-width:         0;
-$modal-content-bg:                 rgba($dark, .8);
-
+$modal-header-border-width: 0;
+$modal-content-bg: rgba($dark, 0.8);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.navbar, .modal, .login {
+p {
+    font-weight: 500;
+}
+
+section {
+    margin: 125px 0;
+}
+
+.navbar,
+.modal,
+.login {
     letter-spacing: 2px;
 }
 
 .narrow-buttom {
-width: 100px;
+    width: 120px;
 }
 
 .wide-buttom {
-width: 200px;
+    width: 200px;
 }
 
 .blue-pill {
     height: 80%;
     width: 150%;
     z-index: -1;
-    margin: 15% 0 0 20%;
+    margin: 15% 25%;
     background-color: $primary;
+}
+
+// Features Tab Menu --------------------------
+
+.nav-tabs {
+    a {
+        line-height: 42px;
+        color: gray;
+        font-weight: 600;
+        padding: 13px 0px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+        }
+
+        &.active::before {
+            background: $secondary;
+        }
+    }
+
+    li {
+        width: 220px;
+        text-align: center;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+            border-top: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+        }
+    }
+
+    .nav-link {
+        border: none;
+    }
+}
+
+// Features Tab Display Content --------------------------
+.tab-content {
+    .active {
+        display: inline-flex;
+    }
 }

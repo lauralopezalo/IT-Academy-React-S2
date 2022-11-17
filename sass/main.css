@@ -10936,15 +10936,25 @@ textarea.form-control-lg {
   }
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.navbar, .modal, .login {
+p {
+  font-weight: 500;
+}
+
+section {
+  margin: 125px 0;
+}
+
+.navbar,
+.modal,
+.login {
   letter-spacing: 2px;
 }
 
 .narrow-buttom {
-  width: 100px;
+  width: 120px;
 }
 
 .wide-buttom {
@@ -10955,6 +10965,46 @@ body {
   height: 80%;
   width: 150%;
   z-index: -1;
-  margin: 15% 0 0 20%;
+  margin: 15% 25%;
   background-color: #5265e1;
+}
+
+.nav-tabs a {
+  line-height: 42px;
+  color: gray;
+  font-weight: 600;
+  padding: 13px 0px;
+  position: relative;
+}
+.nav-tabs a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+}
+.nav-tabs a.active::before {
+  background: #fa5959;
+}
+.nav-tabs li {
+  width: 220px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .nav-tabs li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-tabs li {
+    border-top: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+  }
+}
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.tab-content .active {
+  display: inline-flex;
 }/*# sourceMappingURL=main.css.map */
