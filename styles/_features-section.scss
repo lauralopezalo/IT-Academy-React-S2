@@ -1,0 +1,50 @@
+// Features Tab Menu --------------------------
+
+.nav-tabs {
+    border-bottom: none;
+    a {
+        line-height: 42px;
+        color: gray;
+        font-weight: 500;
+        padding: 13px 0px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+        }
+
+        &.active::before {
+            background: $secondary;
+        }
+    }
+
+
+    li {
+        width: 220px;
+        text-align: center;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            border-top: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+            &:last-child {
+                border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+            }
+        }
+    }
+
+    .nav-link {
+        border: none;
+    }
+}
+
+// Features Tab Display Content --------------------------
+.tab-content {
+    .active {
+        display: inline-flex;
+    }
+}

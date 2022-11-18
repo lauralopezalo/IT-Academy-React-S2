@@ -1,0 +1,30 @@
+.browser-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 15px rgba($primary, 0.2);
+    margin: 2rem auto;
+    width: 300px;
+    height: 22rem;
+
+    img {
+        margin: 1.5rem 0;
+    }
+
+    a {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .firefox {
+        margin-top: 5rem;
+    }
+
+    .opera {
+        margin-top: 10rem;
+    }
+}
