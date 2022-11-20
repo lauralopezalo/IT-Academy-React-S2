@@ -2,6 +2,9 @@ $primary: #5265e1;
 $secondary: #fa5959;
 $dark: #242946;
 
+//disable text wrapping for each button
+$btn-white-space: nowrap;
+
 $box-shadow-sm: 0 0.25rem 0.25rem rgba($primary, 0.2);
 
 $modal-header-border-width: 0;
@@ -11,12 +14,18 @@ $modal-content-bg: rgba($dark, 0.8);
 $accordion-button-icon:         url("../src/img/icon-arrow.svg");
 $accordion-button-active-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#fa5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
 
+//form variables
+$form-feedback-invalid-color:       $secondary;
+$form-feedback-icon-invalid:        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FA5959"/><g fill="#FFF" transform="translate(9 5)"><rect width="2" height="7" rx="1"/><rect width="2" height="2" y="8" rx="1"/></g></g></svg>');
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./features-section";
 @import "./download-cards-section";
 @import "./faq-section";
-
+@import "./footer";
 
 body {
     font-family: "Rubik", sans-serif;
@@ -53,7 +62,8 @@ section {
     a,
     button {
         font-weight: 500;
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -61,18 +71,20 @@ section {
     font-weight: 400;
 }
 
-.narrow-buttom {
+.narrow-button {
     width: 100px;
     height: 40px;
     font-size: 0.8rem;
+    border-radius: 4px;
 }
 
-.wide-buttom {
+.wide-button {
     width: 200px;
     height: 40px;
     font-weight: 400;
     font-size: 0.8rem;
     color: gray;
+    border-radius: 4px;
 }
 
 .blue-pill {

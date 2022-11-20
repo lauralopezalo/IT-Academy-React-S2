@@ -2731,7 +2731,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #dc3545;
+  color: #fa5959;
 }
 
 .invalid-tooltip {
@@ -2743,8 +2743,8 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
   font-size: 0.875rem;
-  color: #fff;
-  background-color: rgba(220, 53, 69, 0.9);
+  color: #000;
+  background-color: rgba(250, 89, 89, 0.9);
   border-radius: 0.375rem;
 }
 
@@ -2756,16 +2756,16 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #dc3545;
+  border-color: #fa5959;
   padding-right: calc(1.5em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20"%3e%3cg fill="none" fill-rule="evenodd"%3e%3ccircle cx="10" cy="10" r="10" fill="%23FA5959"/%3e%3cg fill="%23FFF" transform="translate%289 5%29"%3e%3crect width="2" height="7" rx="1"/%3e%3crect width="2" height="2" y="8" rx="1"/%3e%3c/g%3e%3c/g%3e%3c/svg%3e');
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  border-color: #fa5959;
+  box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
@@ -2774,17 +2774,17 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
-  border-color: #dc3545;
+  border-color: #fa5959;
 }
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
   padding-right: 4.125rem;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20"%3e%3cg fill="none" fill-rule="evenodd"%3e%3ccircle cx="10" cy="10" r="10" fill="%23FA5959"/%3e%3cg fill="%23FFF" transform="translate%289 5%29"%3e%3crect width="2" height="7" rx="1"/%3e%3crect width="2" height="2" y="8" rx="1"/%3e%3c/g%3e%3c/g%3e%3c/svg%3e');
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  border-color: #fa5959;
+  box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 
 .was-validated .form-control-color:invalid, .form-control-color.is-invalid {
@@ -2792,16 +2792,16 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-check-input:invalid, .form-check-input.is-invalid {
-  border-color: #dc3545;
+  border-color: #fa5959;
 }
 .was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
-  background-color: #dc3545;
+  background-color: #fa5959;
 }
 .was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
-  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(250, 89, 89, 0.25);
 }
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
-  color: #dc3545;
+  color: #fa5959;
 }
 
 .form-check-inline .form-check-input ~ .invalid-feedback {
@@ -2841,6 +2841,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-color);
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -10977,6 +10978,10 @@ textarea.form-control-lg {
   display: inline-flex;
 }
 
+.cards-container {
+  max-width: 1000px;
+}
+
 .browser-card {
   display: flex;
   justify-content: center;
@@ -11027,6 +11032,72 @@ textarea.form-control-lg {
   padding: 1.5rem 1.5rem 1rem 0.5rem;
 }
 
+footer form {
+  padding: 4rem 0;
+  min-height: 350px;
+}
+footer form p {
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+}
+footer form > div {
+  gap: 30px;
+}
+footer form .input-container {
+  width: 100%;
+  border-radius: 0.375rem;
+}
+footer form .input-container .form-control {
+  min-height: 40px;
+  border: none;
+}
+footer form .input-container .form-control::-moz-placeholder {
+  font-size: 0.8rem;
+}
+footer form .input-container .form-control:-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+footer form .input-container .form-control::placeholder {
+  font-size: 0.8rem;
+}
+footer form .input-container .invalid-tooltip {
+  width: 100%;
+  text-align: left;
+  top: 36px;
+  padding: 0.5rem 0.8rem 0.25rem 0.8rem;
+  margin-top: 0rem;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #fa5959;
+  border-radius: 0 0 0.375rem 0.375rem;
+  font-style: italic;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #fa5959;
+  border: 2px solid #fa5959;
+  border-bottom: 4px solid #fa5959;
+}
+
+#footer-links {
+  padding: 3rem 0;
+  background-color: #242946;
+}
+@media screen and (min-width: 768px) {
+  #footer-links {
+    padding: 1rem 0;
+  }
+}
+#footer-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
@@ -11059,25 +11130,28 @@ section {
 .navbar a,
 .navbar button {
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
 }
 
 .modal a {
   font-weight: 400;
 }
 
-.narrow-buttom {
+.narrow-button {
   width: 100px;
   height: 40px;
   font-size: 0.8rem;
+  border-radius: 4px;
 }
 
-.wide-buttom {
+.wide-button {
   width: 200px;
   height: 40px;
   font-weight: 400;
   font-size: 0.8rem;
   color: gray;
+  border-radius: 4px;
 }
 
 .blue-pill {
