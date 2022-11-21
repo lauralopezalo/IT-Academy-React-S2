@@ -10957,6 +10957,9 @@ textarea.form-control-lg {
 .nav-tabs a.active::before {
   background: #fa5959;
 }
+.nav-tabs a:hover {
+  color: #fa5959;
+}
 .nav-tabs li {
   width: 220px;
   text-align: center;
@@ -11097,6 +11100,9 @@ footer form .input-container .invalid-tooltip {
   letter-spacing: 0.2rem;
   padding: 1rem;
 }
+#footer-links a:hover {
+  color: #fa5959;
+}
 
 body {
   font-family: "Rubik", sans-serif;
@@ -11127,31 +11133,91 @@ section {
   margin: 8rem 0;
 }
 
-.navbar a,
-.navbar button {
+.navbar a, .navbar .btn {
   font-weight: 500;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
+}
+.navbar a:hover {
+  color: #fa5959;
+}
+.navbar img {
+  cursor: pointer;
 }
 
 .modal a {
   font-weight: 400;
 }
 
-.narrow-button {
-  width: 100px;
+.modal svg {
+  cursor: pointer;
+}
+
+.btn {
+  color: white;
   height: 40px;
+  font-weight: 500;
   font-size: 0.8rem;
   border-radius: 4px;
+}
+.btn:hover {
+  background-color: white;
+}
+
+.red-button {
+  background-color: #fa5959;
+  width: 100px;
+  letter-spacing: 0.2rem;
+}
+.red-button:hover {
+  color: #fa5959;
+  border: 2px solid #fa5959;
 }
 
 .wide-button {
   width: 200px;
-  height: 40px;
-  font-weight: 400;
-  font-size: 0.8rem;
+}
+.wide-button:hover {
+  color: #5265e1;
+  border: 2px solid #5265e1;
+}
+
+.disabled-button {
   color: gray;
-  border-radius: 4px;
+}
+.disabled-button:hover {
+  color: gray;
+  border: 2px solid gray;
+}
+
+.narrow-button {
+  background-color: #5265e1;
+  width: 100px;
+}
+.narrow-button:hover {
+  color: #5265e1;
+  border: 2px solid #5265e1;
+}
+
+.contact-us-button {
+  width: 200px;
+}
+.contact-us-button:hover {
+  color: #fa5959;
+  border: 2px solid #fa5959;
+}
+
+.modal .login:hover {
+  background-color: transparent;
+  color: #fa5959;
+  border-color: #fa5959;
+}
+
+.rrss {
+  cursor: pointer;
+}
+.rrss path:hover {
+  fill: #fa5959;
 }
 
 .blue-pill {

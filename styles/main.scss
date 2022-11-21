@@ -2,30 +2,32 @@ $primary: #5265e1;
 $secondary: #fa5959;
 $dark: #242946;
 
+
 //disable text wrapping for each button
 $btn-white-space: nowrap;
 
+//shadows for buttons
 $box-shadow-sm: 0 0.25rem 0.25rem rgba($primary, 0.2);
 
+//modal size and color
 $modal-header-border-width: 0;
 $modal-content-bg: rgba($dark, 0.8);
 
 // scss-docs-start accordion-variables
-$accordion-button-icon:         url("../src/img/icon-arrow.svg");
-$accordion-button-active-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#fa5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+$accordion-button-icon: url("../src/img/icon-arrow.svg");
+$accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#fa5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
 
 //form variables
-$form-feedback-invalid-color:       $secondary;
-$form-feedback-icon-invalid:        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FA5959"/><g fill="#FFF" transform="translate(9 5)"><rect width="2" height="7" rx="1"/><rect width="2" height="2" y="8" rx="1"/></g></g></svg>');
-
-
-
+$form-feedback-invalid-color: $secondary;
+$form-feedback-icon-invalid: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FA5959"/><g fill="#FFF" transform="translate(9 5)"><rect width="2" height="7" rx="1"/><rect width="2" height="2" y="8" rx="1"/></g></g></svg>');
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./features-section";
 @import "./download-cards-section";
 @import "./faq-section";
 @import "./footer";
+
+
 
 body {
     font-family: "Rubik", sans-serif;
@@ -58,12 +60,21 @@ section {
     margin: 8rem 0;
 }
 
+
+//Navbar, desktop and mobile
 .navbar {
-    a,
-    button {
+    a, .btn {
         font-weight: 500;
         letter-spacing: 0.2rem;
         font-size: 0.8rem;
+    }
+
+    a:hover {
+        color: $secondary;
+    }
+
+    img {
+        cursor: pointer;
     }
 }
 
@@ -71,22 +82,89 @@ section {
     font-weight: 400;
 }
 
-.narrow-button {
-    width: 100px;
+.modal svg {
+    cursor: pointer;
+}
+
+
+// common button features
+.btn {
+    color: white;
     height: 40px;
+    font-weight: 500;
     font-size: 0.8rem;
     border-radius: 4px;
+    &:hover {
+        background-color: white;
+    }
+}
+
+// button-specific features
+.red-button {
+    background-color: $secondary;
+    width: 100px;
+    letter-spacing: 0.2rem;
+    &:hover {
+        color: $secondary;
+        border: 2px solid $secondary;
+    }
 }
 
 .wide-button {
     width: 200px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: gray;
-    border-radius: 4px;
+
+    &:hover {
+        color: $primary;
+        border: 2px solid $primary;
+    }
 }
 
+.disabled-button {
+    color: gray;
+
+    &:hover {
+        color: gray;
+        border: 2px solid gray;
+    }
+}
+
+// more info buttons
+.narrow-button {
+    background-color: $primary;
+    width: 100px;
+
+    &:hover {
+        color: $primary;
+        border: 2px solid $primary;
+    }
+}
+
+// footer button
+.contact-us-button {
+    width: 200px;
+
+    &:hover {
+        color: $secondary;
+        border: 2px solid $secondary;
+    }
+}
+
+// specific hover for the login button inside the modal
+.modal .login:hover {
+    background-color: transparent;
+    color: $secondary;
+    border-color: $secondary;
+}
+
+// hover for rrss icons
+.rrss {
+    cursor: pointer;
+    path:hover {
+    fill: $secondary;
+}}
+
+
+// blue pill shape
 .blue-pill {
     height: 80%;
     width: 150%;
